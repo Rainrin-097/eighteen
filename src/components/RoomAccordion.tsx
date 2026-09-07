@@ -23,7 +23,7 @@ export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAcc
   return (
     <div
       className="border-b transition-colors duration-300"
-      style={{ borderColor: 'rgba(255,255,255,0.12)' }}
+      style={{ borderColor: 'rgba(23,23,23,0.3)' }}
     >
       {/* 标题区域 */}
       <button
@@ -32,7 +32,7 @@ export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAcc
       >
         <div className="flex items-start gap-4 sm:gap-8 flex-1 min-w-0">
           <span className="text-xs font-light tabular-nums pt-1 transition-colors duration-300"
-            style={{ color: isOpen ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.25)' }}
+            style={{ color: isOpen ? 'rgba(23,23,23,0.7)' : 'rgba(23,23,23,0.4)' }}
           >
             {String(index + 1).padStart(2, '0')}
           </span>
@@ -40,14 +40,14 @@ export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAcc
             <h3
               className="text-lg sm:text-2xl font-light tracking-wide transition-all duration-300"
               style={{
-                color: isOpen ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.7)',
+                color: isOpen ? '#171717' : 'rgba(23,23,23,0.7)',
                 transform: isOpen ? 'translateX(2px)' : 'translateX(0)',
               }}
             >
               {room.title}
             </h3>
             <p className="mt-3 text-sm font-light leading-relaxed line-clamp-2"
-              style={{ color: 'rgba(255,255,255,0.4)' }}
+              style={{ color: 'rgba(23,23,23,0.65)' }}
             >
               {room.description}
             </p>
@@ -61,7 +61,7 @@ export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAcc
               opacity: isOpen ? 0.6 : 1,
             }}
           >
-            <Plus size={20} strokeWidth={1} style={{ color: 'rgba(255,255,255,0.6)' }} />
+            <Plus size={20} strokeWidth={1} style={{ color: 'rgba(23,23,23,0.7)' }} />
           </div>
         </div>
       </button>

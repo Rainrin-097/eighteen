@@ -20,7 +20,10 @@ export default function Carousel({ room, autoPlayInterval = 3500 }: CarouselProp
 
   useEffect(() => {
     if (isHovered || total <= 1) return;
-    timerRef.current = setInterval(next, autoPlayInterval);
+    timerRef.current = setInterval(
+      () => setCurrent((prev) => (prev + 1) % total),
+      autoPlayInterval,
+    );
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
@@ -37,29 +40,29 @@ export default function Carousel({ room, autoPlayInterval = 3500 }: CarouselProp
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* 图片轨道 */}
-    <div
-      className="flex transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
-      style={{ transform: `translateX(-${current * 100}%)` }}
-    >
-      {room.imageNames.map((_, index) => (
-        <div key={index} className="w-full flex-shrink-0">
-          <img
-            src={getImageUrl(room, index)}
-            alt={`${room.title} - ${index + 1}`}
-            className="w-full object-cover"
-            style={{ aspectRatio: '3 / 2' }}
-            loading="lazy"
-          />
-        </div>
-      ))}
-    </div>
+      <div
+        className="flex transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {room.imageNames.map((_, index) => (
+          <div key={index} className="w-full flex-shrink-0">
+            <img
+              src={getImageUrl(room, index)}
+              alt={`${room.title} - ${index + 1}`}
+              className="w-full object-cover"
+              style={{ aspectRatio: '3 / 2' }}
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
 
       {/* 左右箭头 */}
       {total > 1 && (
         <>
           <button
             onClick={prev}
-            className="absolute left-0 top-0 bottom-0 flex items-center px-3 sm:px-5 text-white/70 hover:text-white transition-all duration-300 hover:opacity-100 opacity-0 group-hover:opacity-100"
+            className="absolute left-0 top-0 bottom-0 flex items-center px-3 sm:px-5 text-black/70 hover:text-black transition-all duration-300 hover:opacity-100 opacity-0 group-hover:opacity-100"
             style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.3), transparent)' }}
             aria-label="上一张"
           >
@@ -67,7 +70,7 @@ export default function Carousel({ room, autoPlayInterval = 3500 }: CarouselProp
           </button>
           <button
             onClick={next}
-            className="absolute right-0 top-0 bottom-0 flex items-center px-3 sm:px-5 text-white/70 hover:text-white transition-all duration-300 hover:opacity-100 opacity-0 group-hover:opacity-100"
+            className="absolute right-0 top-0 bottom-0 flex items-center px-3 sm:px-5 text-black/70 hover:text-black transition-all duration-300 hover:opacity-100 opacity-0 group-hover:opacity-100"
             style={{ background: 'linear-gradient(to left, rgba(0,0,0,0.3), transparent)' }}
             aria-label="下一张"
           >
@@ -88,7 +91,7 @@ export default function Carousel({ room, autoPlayInterval = 3500 }: CarouselProp
                 width: index === current ? '24px' : '6px',
                 height: '6px',
                 borderRadius: '3px',
-                backgroundColor: index === current ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.3)',
+                backgroundColor: index === current ? 'rgba(23,23,23,0.9)' : 'rgba(23,23,23,0.3)',
               }}
               aria-label={`第 ${index + 1} 张`}
             />
@@ -97,7 +100,7 @@ export default function Carousel({ room, autoPlayInterval = 3500 }: CarouselProp
       )}
 
       {/* 计数 */}
-      <div className="absolute bottom-4 right-4 text-xs font-light text-white/50 tabular-nums">
+      <div className="absolute bottom-4 right-4 text-xs font-light text-black/60 tabular-nums">
         {String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
       </div>
     </div>
