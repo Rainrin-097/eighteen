@@ -38,7 +38,7 @@ export default function Gallery() {
         <p className="text-xs font-light tracking-[0.3em] uppercase mb-6"
           style={{ color: 'rgba(23,23,23,0.5)' }}
         >
-          2008 — 2026
+          2025.9 — 2026.9
         </p>
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extralight tracking-wide leading-tight"
           style={{ color: '#171717' }}
@@ -52,7 +52,9 @@ export default function Gallery() {
         <p className="mt-8 text-sm sm:text-base font-light leading-loose max-w-2xl"
           style={{ color: 'rgba(23,23,23,0.65)' }}
         >
-          【待补充：影像馆整体前言，100-200字。描述这组影像作品的创作动机、时间跨度与情感脉络。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.】
+          收录了我18岁这一年拍摄的一些照片<br />
+          想过写小作文写岁末总结，后来觉得都不如照片来的直接<br />
+          个人纪念用，也供大家欣赏
         </p>
       </header>
 

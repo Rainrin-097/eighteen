@@ -40,21 +40,22 @@ export default function Carousel({ room, autoPlayInterval = 3500 }: CarouselProp
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* 图片轨道 */}
-      <div
-        className="flex transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
-        style={{ transform: `translateX(-${current * 100}%)` }}
-      >
-        {room.imageNames.map((_, index) => (
-          <div key={index} className="w-full flex-shrink-0">
-            <img
-              src={getImageUrl(room, index)}
-              alt={`${room.title} - ${index + 1}`}
-              className="w-full object-cover"
-              style={{ aspectRatio: '3 / 2' }}
-              loading="lazy"
-            />
-          </div>
-        ))}
+      <div className="mx-auto aspect-[4/3] w-full max-w-3xl overflow-hidden bg-black/[0.04]">
+        <div
+          className="flex h-full transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {room.imageNames.map((_, index) => (
+            <div key={index} className="flex h-full w-full flex-shrink-0 items-center justify-center">
+              <img
+                src={getImageUrl(room, index)}
+                alt={`${room.title} - ${index + 1}`}
+                className="max-h-full max-w-full object-contain"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* 左右箭头 */}

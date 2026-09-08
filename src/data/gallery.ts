@@ -65,13 +65,13 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-zuji',
     title: '足迹',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '“踏遍万水千山总有一地故乡”\u00A0\u00A0\u00A0\u00A0--《历历万乡》',
     rooms: [
       {
         id: 'room-meishan',
         title: '眉山',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '一城山水韵，千载诗书城',
         folderPath: '足迹/眉山',
         imageNames: genImageNames(24),
       },
@@ -79,7 +79,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-wuhan',
         title: '武汉',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '楚韵千年，江城烟火',
         folderPath: '足迹/武汉',
         imageNames: genImageNames(50),
       },
@@ -87,7 +87,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-changsha',
         title: '长沙',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '湘江北去，茶颜满城',
         folderPath: '足迹/长沙',
         imageNames: genImageNames(16),
       },
@@ -95,7 +95,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-nanchang',
         title: '南昌',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '豫章故郡，洪都新府',
         folderPath: '足迹/南昌',
         imageNames: genImageNames(34),
       },
@@ -103,7 +103,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-shanghai',
         title: '上海',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '十里洋场旧，一城梧桐新',
         folderPath: '足迹/上海',
         imageNames: genImageNames(42),
       },
@@ -115,13 +115,13 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-xianchang',
     title: '现场',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '无数身临其境的现场，构成了最真实的当下',
     rooms: [
       {
         id: 'room-wuhanbolindianyingzhou',
         title: '武汉柏林电影周',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“电影发明以后，人类的生命，比起以前至少延长了三倍”\u00A0\u00A0\u00A0\u00A0——《一一》',
         folderPath: '现场/武汉柏林电影周',
         imageNames: genImageNames(3),
       },
@@ -129,7 +129,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-yili-wuhan-kuanian',
         title: '一粒 武汉跨年',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“游千百遍 千万遍快乐人间”\u00A0\u00A0\u00A0\u00A0——《果实》',
         folderPath: '现场/一粒 武汉跨年',
         imageNames: genImageNames(23),
       },
@@ -137,7 +137,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-hongxiayingju-changsha',
         title: '红霞影剧院 长沙',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“狂热和沮丧都留在 回声里”\u00A0\u00A0\u00A0\u00A0——《晕船记》',
         folderPath: '现场/红霞影剧院 长沙',
         imageNames: genImageNames(22),
       },
@@ -145,7 +145,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-fjaka-festival',
         title: 'Fjaka Festival',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '春天的事 上岛说',
         folderPath: '现场/Fjaka Festival',
         imageNames: genImageNames(11),
       },
@@ -153,7 +153,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-xiaogoudegutou',
         title: '小狗的骨头',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“噢天使 来到我身边 或让我飞向你”\u00A0\u00A0\u00A0\u00A0——《噢！天使》',
         folderPath: '现场/小狗的骨头',
         imageNames: genImageNames(11),
       },
@@ -161,7 +161,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-ezhouyinhezuoan',
         title: '鄂州银河左岸',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '做志愿者去了',
         folderPath: '现场/鄂州银河左岸',
         imageNames: genImageNames(1),
       },
@@ -173,13 +173,13 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-zaixuexiao',
     title: '在学校',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '永是珞珈一少年',
     rooms: [
       {
         id: 'room-yinghuaji',
         title: '樱花季',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '珞樱缤纷',
         folderPath: '在学校/樱花季',
         imageNames: genImageNames(36),
       },
@@ -187,7 +187,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-meiyuan',
         title: '梅园',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '疏影横斜处，暗香浮动时',
         folderPath: '在学校/梅园',
         imageNames: genImageNames(11),
       },
@@ -195,7 +195,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-luojiashan',
         title: '珞珈山',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '东湖之滨 珞珈山下',
         folderPath: '在学校/珞珈山',
         imageNames: genImageNames(17),
       },
@@ -203,7 +203,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-suibianpaipai',
         title: '随便拍拍',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '',
         folderPath: '在学校/随便拍拍',
         imageNames: genImageNames(18),
       },
@@ -215,13 +215,13 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-guangguan',
     title: '逛馆',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '每一件馆藏背后都是一段历史',
     rooms: [
       {
         id: 'room-sansuci',
         title: '三苏祠',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '眉山有祠，父子文章',
         folderPath: '逛馆/三苏祠',
         imageNames: genImageNames(6),
       },
@@ -229,7 +229,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-hubeishengbowuguan',
         title: '湖北省博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '剑藏寒霜，钟鸣千古',
         folderPath: '逛馆/湖北省博物馆',
         imageNames: genImageNames(31),
       },
@@ -237,7 +237,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-wanlinbowuguan',
         title: '万林博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '飞来石下，千年云冈',
         folderPath: '逛馆/万林博物馆',
         imageNames: genImageNames(15),
       },
@@ -245,7 +245,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-hunanshengbowuguan',
         title: '湖南省博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '辛追一梦，楚地千秋',
         folderPath: '逛馆/湖南省博物馆',
         imageNames: genImageNames(15),
       },
@@ -253,7 +253,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-jiangxishengbowuguan',
         title: '江西省博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '青铜鉴今，釉里红妆',
         folderPath: '逛馆/江西省博物馆',
         imageNames: genImageNames(40),
       },
@@ -261,7 +261,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-bayijinianguan',
         title: '八一纪念馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '军旗升起的地方',
         folderPath: '逛馆/八一纪念馆',
         imageNames: genImageNames(15),
       },
@@ -269,7 +269,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-badashanrenjinianguan',
         title: '八大山人纪念馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '一鸟一石，皆是山河',
         folderPath: '逛馆/八大山人纪念馆',
         imageNames: genImageNames(10),
       },
@@ -277,7 +277,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-shanghaibowuguan',
         title: '上海博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '一馆尽江南，半壁见中国',
         folderPath: '逛馆/上海博物馆',
         imageNames: genImageNames(17),
       },
@@ -285,7 +285,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-shanghailishibowuguan',
         title: '上海历史博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '一河穿城过，千年水岸新 （“从元代水闸到外白渡桥——苏州河历史文化展”）',
         folderPath: '逛馆/上海历史博物馆',
         imageNames: genImageNames(9),
       },
@@ -293,7 +293,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-shanghaidianyingbowuguan',
         title: '上海电影博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '百工同在 电影万岁',
         folderPath: '逛馆/上海电影博物馆',
         imageNames: genImageNames(13),
       },
@@ -301,7 +301,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-zhongguotengjiaowenhuabowuguan',
         title: '中国藤椒文化博物馆',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '止戈镇里，麻香千年',
         folderPath: '逛馆/中国藤椒文化博物馆',
         imageNames: genImageNames(10),
       },
@@ -319,7 +319,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-yun',
         title: '云',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“看着我坠啊坠啊坠落到云里”\u00A0\u00A0\u00A0\u00A0——《虚拟》',
         folderPath: '我的天/云',
         imageNames: genImageNames(6),
       },
@@ -327,7 +327,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-xia',
         title: '霞',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“摘下夹在光影的回答 飞驰过盛夏”\u00A0\u00A0\u00A0\u00A0——《红霞剧场》',
         folderPath: '我的天/霞',
         imageNames: genImageNames(18),
       },
@@ -339,13 +339,13 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-xiaodongwumen',
     title: '小动物们',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '万物有灵',
     rooms: [
       {
         id: 'room-meimei',
         title: '美美',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '美美与共 天下大同（bushi',
         folderPath: '小动物们/美美',
         imageNames: genImageNames(35),
       },
@@ -353,7 +353,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-mao',
         title: '猫',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '哈基咪图鉴',
         folderPath: '小动物们/猫',
         imageNames: genImageNames(21),
       },
@@ -361,7 +361,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-lukedao',
         title: '麓客岛',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '岛上的小动物们',
         folderPath: '小动物们/麓客岛',
         imageNames: genImageNames(17),
       },
@@ -373,13 +373,13 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-zhiwu',
     title: '植物',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '一草一木 宿鸟飞花',
     rooms: [
       {
         id: 'room-hua',
         title: '花',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“吻著花香 枕著幻想 放肆地夢一場”\u00A0\u00A0\u00A0\u00A0——《如梦》',
         folderPath: '植物/花',
         imageNames: genImageNames(38),
       },
@@ -387,7 +387,7 @@ export const galleryData: GalleryHall[] = [
         id: 'room-cao',
         title: '草',
         description:
-          '【待补充：50-100字描述，讲述这组照片的背景、时间、地点与情感。】',
+          '“在安静的芳草地”\u00A0\u00A0\u00A0\u00A0——《芳草地》',
         folderPath: '植物/草',
         imageNames: genImageNames(9),
       },

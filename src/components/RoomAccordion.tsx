@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Plus } from 'lucide-react';
 import type { GalleryRoom } from '@/data/gallery';
 import Carousel from './Carousel';
+import PhotoOverview from './PhotoOverview';
 
 interface RoomAccordionProps {
   room: GalleryRoom;
@@ -13,11 +14,23 @@ interface RoomAccordionProps {
 export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAccordionProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const [isOverviewOpen, setIsOverviewOpen] = useState(false);
 
   useEffect(() => {
-    if (contentRef.current) {
-      setHeight(isOpen ? contentRef.current.scrollHeight : 0);
-    }
+    const content = contentRef.current;
+    if (!content) return;
+
+    const updateHeight = () => setHeight(isOpen ? content.scrollHeight : 0);
+    updateHeight();
+
+    const observer = new ResizeObserver(updateHeight);
+    observer.observe(content);
+
+    return () => observer.disconnect();
+  }, [isOpen, isOverviewOpen]);
+
+  useEffect(() => {
+    if (!isOpen) setIsOverviewOpen(false);
   }, [isOpen]);
 
   return (
@@ -72,11 +85,22 @@ export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAcc
         style={{ maxHeight: `${height}px` }}
       >
         <div ref={contentRef} className="pb-8 sm:pb-12 pl-8 sm:pl-16 pr-0">
+          <button
+            type="button"
+            onClick={() => setIsOverviewOpen(true)}
+            className="mb-5 border-b pb-1 text-xs tracking-[0.2em] transition-colors hover:text-black/60"
+            style={{ borderColor: 'rgba(23,23,23,0.45)', color: 'rgba(23,23,23,0.8)' }}
+          >
+            所有照片
+          </button>
+
           <div className="group relative">
             <Carousel room={room} />
           </div>
         </div>
       </div>
+
+      {isOverviewOpen && <PhotoOverview room={room} onClose={() => setIsOverviewOpen(false)} />}
     </div>
   );
 }
