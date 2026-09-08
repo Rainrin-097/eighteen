@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { galleryData } from '@/data/gallery';
 import RoomAccordion from './RoomAccordion';
 
@@ -6,6 +6,7 @@ export default function Gallery() {
   const [activeHallId, setActiveHallId] = useState(galleryData[0].id);
   const [openRoomId, setOpenRoomId] = useState<string | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const hasMounted = useRef(false);
 
   const activeHall = galleryData.find((h) => h.id === activeHallId) ?? galleryData[0];
 
@@ -23,11 +24,15 @@ export default function Gallery() {
     setOpenRoomId((prev) => (prev === roomId ? null : roomId));
   };
 
-  // 展厅切换时重置滚动位置
   useEffect(() => {
-    const section = document.getElementById('rooms-section');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
+
+    const navigation = document.getElementById('hall-navigation');
+    if (navigation) {
+      navigation.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [activeHallId]);
 
@@ -60,6 +65,7 @@ export default function Gallery() {
 
       {/* 展厅导航 */}
       <nav
+        id="hall-navigation"
         className="sticky top-0 z-50 px-6 sm:px-12 lg:px-24 py-4 sm:py-5"
         style={{
           backgroundColor: 'rgba(244,240,232,0.9)',
