@@ -51,7 +51,7 @@ export default function RoomAccordion({ room, isOpen, onToggle, index }: RoomAcc
           </span>
           <div className="flex-1 min-w-0">
             <h3
-              className="text-lg sm:text-2xl font-light tracking-wide transition-all duration-300"
+              className="text-xl sm:text-2xl font-light tracking-wide transition-all duration-300"
               style={{
                 color: isOpen ? '#171717' : 'rgba(23,23,23,0.7)',
                 transform: isOpen ? 'translateX(2px)' : 'translateX(0)',

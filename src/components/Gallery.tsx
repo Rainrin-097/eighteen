@@ -45,7 +45,7 @@ export default function Gallery() {
         >
           2025.9 — 2026.9
         </p>
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extralight tracking-wide leading-tight"
+        <h1 className="text-6xl sm:text-5xl lg:text-6xl font-light tracking-wide leading-tight"
           style={{ color: '#171717' }}
         >
           我的18岁影像馆
@@ -83,7 +83,7 @@ export default function Gallery() {
                 className="flex items-center gap-3 whitespace-nowrap transition-all duration-300 group flex-shrink-0"
               >
                 <span
-                  className="text-xs font-light tabular-nums transition-colors duration-300"
+                  className="text-xs font-normal tabular-nums transition-colors duration-300"
                   style={{ color: isActive ? 'rgba(23,23,23,0.7)' : 'rgba(23,23,23,0.35)' }}
                 >
                   {String(index + 1).padStart(2, '0')}
@@ -115,7 +115,7 @@ export default function Gallery() {
         className={`px-6 sm:px-12 lg:px-24 pt-12 sm:pt-16 transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'
           }`}
       >
-        <h2 className="text-xl sm:text-3xl font-extralight tracking-wide mb-3"
+        <h2 className="text-xl sm:text-3xl font-light tracking-wide mb-3"
           style={{ color: '#171717' }}
         >
           {activeHall.title}
@@ -156,7 +156,9 @@ export default function Gallery() {
         <p className="text-xs font-light tracking-wider"
           style={{ color: 'rgba(23,23,23,0.5)' }}
         >
-          【待补充：版权信息 / 摄影师署名 / 联系方式】
+          -图片均由本人拍摄，未经允许请勿转载或用于商业用途 <br />
+          -署名：Rainrin <br />
+          -联系方式：rain_u_u_rin@163.com <br />
         </p>
       </footer>
     </div>
