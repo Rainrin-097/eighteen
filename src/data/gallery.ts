@@ -313,7 +313,7 @@ export const galleryData: GalleryHall[] = [
   {
     id: 'hall-wodetian',
     title: '我的天',
-    subtitle: '【待补充：展厅副标题，描述这一主题的基调与情绪】',
+    subtitle: '“漂流在世界的另一边”\u00A0\u00A0\u00A0\u00A0——《天空》',
     rooms: [
       {
         id: 'room-yun',
