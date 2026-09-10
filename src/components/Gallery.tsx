@@ -159,6 +159,16 @@ export default function Gallery() {
           -图片均由本人拍摄，未经允许请勿转载或用于商业用途 <br />
           -署名：Rainrin <br />
           -联系方式：rain_u_u_rin@163.com <br />
+          -GitHub仓库：
+          <a
+            href="https://github.com/Rainrin-097/eighteen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 transition-opacity hover:opacity-60"
+            style={{ color: 'rgba(23,23,23,0.5)' }}
+          >
+            Rainrin-097/eighteen
+          </a>
         </p>
       </footer>
     </div>
