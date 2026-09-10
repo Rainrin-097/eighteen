@@ -1,8 +1,7 @@
 # 我的18岁影像馆
+
 **2025.9 - 2026.9**
 
 收录了我18岁这一年拍的一些照片，仅做个人纪念用，开源供大家看个乐子(*^▽^*)
 
 可直接fork到仓库替换图片构建你的影像馆
-
-[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-enod5xac)
